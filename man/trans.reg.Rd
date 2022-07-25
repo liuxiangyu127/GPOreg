@@ -21,7 +21,7 @@ trans.reg(formula, data, trans = TRUE)
   The unknown parameters can be estimated using the following
   estimating equation,
   \mjsdeqn{
-  \frac{1}{n} \sum_{i=1}^n \boldsymbol{X}_i \{ h(\widehat{\mathcal{P}}_i) - \widetilde{\boldsymbol{X}}  _i^\top\boldsymbol{\beta}_{L} \} = 0.
+  \frac{1}{n} \sum_{i=1}^n \boldsymbol{X}_i \{ h(\widehat{\mathcal{P}}_i) - \boldsymbol{X}  _i^\top\boldsymbol{\beta}_{L} \} = 0.
   }
 }
 \value{
