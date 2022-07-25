@@ -9,20 +9,15 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 Suppose there are $M$ outcomes $Y_{1},\ldots, Y_{M}$, each with marginal CDF $F_m(y)=P(Y_{m}\leq y), m=1,2,\ldots,M$.
-Without loss of generality, suppose that higher values are worse for all outcomes.
-Then, Global Percentile Outcome (GPO) can be defined as
-$$
-\mathcal{P}_i=M^{-1}\{F_1(Y_{i1})+F_2(Y_{i2})+\ldots+F_M(Y_{iM})\},
-$$
+Without loss of generality, suppose that higher values are worse for all outcomes. Then, Global Percentile Outcome (GPO) can be defined as
+$\mathcal{P}_i=M^{-1}\{F_1(Y_{i1})+F_2(Y_{i2})+\ldots+F_M(Y_{iM})\},$
 which represents the composite percentile for subject $i (i=1,2,\ldots,n)$.
 
 In practice, We can derive an estimated $\widehat{\mathcal{P}}_i$ as
-$$
-\widehat{\mathcal{P}}_i = M^{-1}\{\widehat{F}_{1n}(Y_{i1})+\widehat{F}_{2n}(Y_{i2})+\ldots+\widehat{F}_{Mn}(Y_{iM})\}
-$$
+$\widehat{\mathcal{P}}_i =M^{-1}\{\widehat{F}_{1n}(Y_{i1})+\widehat{F}_{2n}(Y_{i2})+\ldots+\widehat{F}_{Mn}(Y_{iM})\}$
 where $\widehat{F}_{mn}(\cdot)$ denotes the empirical CDF of $Y_{m},m=1,2,\ldots,M$.
 
-This package can fit two semiparametric modelling strategies for the Global Percentile Outcome: transformed linear model and monotonic index model. More details can be found in the reference or help document of each function.
+To assess covariate effects on global disease status, this package can fit two semiparametric regression strategies for GPO: transformed linear model and monotonic index model. More details can be found in the reference paper or the help document of each function.
 
 ## Installation
 You can install the development version of GROreg using:

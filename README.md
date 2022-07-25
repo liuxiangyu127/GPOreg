@@ -11,35 +11,23 @@ each with marginal CDF
 ![F_m(y)=P(Y\_{m}\\leq y), m=1,2,\\ldots,M](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;F_m%28y%29%3DP%28Y_%7Bm%7D%5Cleq%20y%29%2C%20m%3D1%2C2%2C%5Cldots%2CM "F_m(y)=P(Y_{m}\leq y), m=1,2,\ldots,M").
 Without loss of generality, suppose that higher values are worse for all
 outcomes. Then, Global Percentile Outcome (GPO) can be defined as
-
-![
-\\mathcal{P}\_i=M^{-1}\\{F_1(Y\_{i1})+F_2(Y\_{i2})+\\ldots+F_M(Y\_{iM})\\},
-](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%0A%5Cmathcal%7BP%7D_i%3DM%5E%7B-1%7D%5C%7BF_1%28Y_%7Bi1%7D%29%2BF_2%28Y_%7Bi2%7D%29%2B%5Cldots%2BF_M%28Y_%7BiM%7D%29%5C%7D%2C%0A "
-\mathcal{P}_i=M^{-1}\{F_1(Y_{i1})+F_2(Y_{i2})+\ldots+F_M(Y_{iM})\},
-")
-
+![\\mathcal{P}\_i=M^{-1}\\{F_1(Y\_{i1})+F_2(Y\_{i2})+\\ldots+F_M(Y\_{iM})\\},](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cmathcal%7BP%7D_i%3DM%5E%7B-1%7D%5C%7BF_1%28Y_%7Bi1%7D%29%2BF_2%28Y_%7Bi2%7D%29%2B%5Cldots%2BF_M%28Y_%7BiM%7D%29%5C%7D%2C "\mathcal{P}_i=M^{-1}\{F_1(Y_{i1})+F_2(Y_{i2})+\ldots+F_M(Y_{iM})\},")
 which represents the composite percentile for subject
 ![i (i=1,2,\\ldots,n)](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;i%20%28i%3D1%2C2%2C%5Cldots%2Cn%29 "i (i=1,2,\ldots,n)").
 
 In practice, We can derive an estimated
 ![\\widehat{\\mathcal{P}}\_i](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cwidehat%7B%5Cmathcal%7BP%7D%7D_i "\widehat{\mathcal{P}}_i")
 as
-
-![
-\\widehat{\\mathcal{P}}\_i = M^{-1}\\{\\widehat{F}\_{1n}(Y\_{i1})+\\widehat{F}\_{2n}(Y\_{i2})+\\ldots+\\widehat{F}\_{Mn}(Y\_{iM})\\}
-](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%0A%5Cwidehat%7B%5Cmathcal%7BP%7D%7D_i%20%3D%20M%5E%7B-1%7D%5C%7B%5Cwidehat%7BF%7D_%7B1n%7D%28Y_%7Bi1%7D%29%2B%5Cwidehat%7BF%7D_%7B2n%7D%28Y_%7Bi2%7D%29%2B%5Cldots%2B%5Cwidehat%7BF%7D_%7BMn%7D%28Y_%7BiM%7D%29%5C%7D%0A "
-\widehat{\mathcal{P}}_i = M^{-1}\{\widehat{F}_{1n}(Y_{i1})+\widehat{F}_{2n}(Y_{i2})+\ldots+\widehat{F}_{Mn}(Y_{iM})\}
-")
-
+![\\widehat{\\mathcal{P}}\_i =M^{-1}\\{\\widehat{F}\_{1n}(Y\_{i1})+\\widehat{F}\_{2n}(Y\_{i2})+\\ldots+\\widehat{F}\_{Mn}(Y\_{iM})\\}](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cwidehat%7B%5Cmathcal%7BP%7D%7D_i%20%3DM%5E%7B-1%7D%5C%7B%5Cwidehat%7BF%7D_%7B1n%7D%28Y_%7Bi1%7D%29%2B%5Cwidehat%7BF%7D_%7B2n%7D%28Y_%7Bi2%7D%29%2B%5Cldots%2B%5Cwidehat%7BF%7D_%7BMn%7D%28Y_%7BiM%7D%29%5C%7D "\widehat{\mathcal{P}}_i =M^{-1}\{\widehat{F}_{1n}(Y_{i1})+\widehat{F}_{2n}(Y_{i2})+\ldots+\widehat{F}_{Mn}(Y_{iM})\}")
 where
 ![\\widehat{F}\_{mn}(\\cdot)](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;%5Cwidehat%7BF%7D_%7Bmn%7D%28%5Ccdot%29 "\widehat{F}_{mn}(\cdot)")
 denotes the empirical CDF of
 ![Y\_{m},m=1,2,\\ldots,M](https://latex.codecogs.com/png.image?%5Cdpi%7B110%7D&space;%5Cbg_white&space;Y_%7Bm%7D%2Cm%3D1%2C2%2C%5Cldots%2CM "Y_{m},m=1,2,\ldots,M").
 
-This package can fit two semiparametric modelling strategies for the
-Global Percentile Outcome: transformed linear model and monotonic index
-model. More details can be found in the reference or help document of
-each function.
+To assess covariate effects on global disease status, this package can
+fit two semiparametric regression strategies for GPO: transformed linear
+model and monotonic index model. More details can be found in the
+reference paper or the help document of each function.
 
 ## Installation
 
