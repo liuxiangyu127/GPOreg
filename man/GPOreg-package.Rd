@@ -20,7 +20,7 @@ License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
 Suppose there are \mjseqn{M} outcomes \mjseqn{Y_{1},\ldots, Y_{M}},
-each with marginal CDF \mjseqn{F_m(y)=P(Y_{m}\leq y)$, $m=1,2,\ldots,M}.
+each with marginal CDF \mjseqn{F_m(y)=P(Y_{m}\leq y), m=1,2,\ldots,M}.
 Without loss of generality,
 suppose that higher values are worse for all outcomes.
 Then, Global Percentile Outcome (GPO) can be defined as

@@ -8,10 +8,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Introduction
-Suppose there are $M$ outcomes $Y_{1},\ldots, Y_{M}$,
-each with marginal CDF $F_m(y)=P(Y_{m}\leq y), m=1,2,\ldots,M$.
-Without loss of generality,
-suppose that higher values are worse for all outcomes.
+Suppose there are $M$ outcomes $Y_{1},\ldots, Y_{M}$, each with marginal CDF $F_m(y)=P(Y_{m}\leq y), m=1,2,\ldots,M$.
+Without loss of generality, suppose that higher values are worse for all outcomes.
 Then, Global Percentile Outcome (GPO) can be defined as
 $$
 \mathcal{P}_i=M^{-1}\{F_1(Y_{i1})+F_2(Y_{i2})+\ldots+F_M(Y_{iM})\},
