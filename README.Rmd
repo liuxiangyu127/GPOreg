@@ -1,0 +1,56 @@
+---
+title: "README"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+Suppose there are $M$ outcomes $Y_{1},\ldots, Y_{M}$,
+each with marginal CDF $F_m(y)=P(Y_{m}\leq y), m=1,2,\ldots,M$.
+Without loss of generality,
+suppose that higher values are worse for all outcomes.
+Then, Global Percentile Outcome (GPO) can be defined as
+$$
+\mathcal{P}_i=M^{-1}\{F_1(Y_{i1})+F_2(Y_{i2})+\ldots+F_M(Y_{iM})\},
+$$
+which represents the composite percentile for subject $i (i=1,2,\ldots,n)$.
+
+In practice, We can derive an estimated $\widehat{\mathcal{P}}_i$ as
+$$
+\widehat{\mathcal{P}}_i = M^{-1}\{\widehat{F}_{1n}(Y_{i1})+\widehat{F}_{2n}(Y_{i2})+\ldots+\widehat{F}_{Mn}(Y_{iM})\}
+$$
+where $\widehat{F}_{mn}(\cdot)$ denotes the empirical CDF of $Y_{m},m=1,2,\ldots,M$.
+
+This package can fit two semiparametric modelling strategies for the Global Percentile Outcome: transformed linear model and monotonic index model. More details can be found in the reference or help document of each function.
+
+## Installation
+You can install the development version of GROreg using:
+
+```{r}
+library(devtools)
+install_github("liuxiangyu127/GPOreg", quiet = TRUE)
+```
+
+
+## Example
+```{r}
+library(GPOreg)
+trans.reg(cbind(Y1, Y2, Y3, Y4) ~ Z1 + Z2 + Z3 + Z4, data = simda)
+
+# set nresamp to a large integer (e.g., 200) for real application
+mono.reg(cbind(Y1, Y2, Y3, Y4) ~ Z1 + Z2 + Z3 + Z4, data = simda, ninit = 20, nresamp = 5)
+```
+
+
+## Reference
+Xiangyu Liu, Jing Ning, Xuming He, Barbara C. Tilley, Ruosha Li,
+Semiparametric regression modeling of the global percentile outcome,
+Journal of Statistical Planning and Inference,
+Volume 222,
+2023,
+Pages 149-159,
+ISSN 0378-3758,
+https://doi.org/10.1016/j.jspi.2022.06.009.
