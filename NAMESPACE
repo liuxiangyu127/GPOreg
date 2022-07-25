@@ -1,0 +1,17 @@
+useDynLib(GPOreg, .registration=TRUE)
+importFrom(Rcpp, evalCpp)
+exportPattern("^[[:alpha:]]+")
+
+export(
+"mono.reg",
+"trans.reg"
+)
+
+S3method("print","GPOreg")
+
+import(Rcpp, truncnorm)
+
+importFrom("stats", "as.formula", "coef", "dnorm", "lm", "model.frame",
+            "model.matrix", "model.response", "optim", "pnorm", "qnorm",
+            "runif", "rexp", "sd", "vcov")
+importFrom(mathjaxr,preview_rd)
