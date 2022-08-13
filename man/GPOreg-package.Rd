@@ -39,7 +39,7 @@ The definition and estimation of GPO can be adjusted to handle ties and ordinal 
 }
 
 \author{
-Xiangyu Liu, Jing Ning, Ruosha Li <Ruosha.Li@uth.tmc.edu>
+Xiangyu Liu, Jing Ning <jning@mdanderson.org>, Ruosha Li <Ruosha.Li@uth.tmc.edu>
 }
 
 \references{

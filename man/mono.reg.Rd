@@ -55,7 +55,7 @@ Pages 149-159,
 ISSN 0378-3758,
 https://doi.org/10.1016/j.jspi.2022.06.009.
 }
-\author{Xiangyu Liu, Jing Ning, Ruosha Li}
+\author{Xiangyu Liu, Jing Ning <jning@mdanderson.org>, Ruosha Li <Ruosha.Li@uth.tmc.edu>}
 \examples{
 # set nresamp to a large integer (e.g., 200) for real application
 mono.reg(cbind(Y1, Y2, Y3, Y4) ~ Z1 + Z2 + Z3 + Z4, data = simda, ninit = 20, nresamp = 5)
