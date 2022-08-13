@@ -3,8 +3,8 @@ Type: Package
 Title: Regression for global percentile outcomes
 Version: 1.0.0
 Date: 2022-06-20
-Author: Xiangyu Liu, Ruosha Li <Ruosha.Li@uth.tmc.edu>
-Maintainer: Xiangyu Liu, Ruosha Li <Ruosha.Li@uth.tmc.edu>
+Author: Xiangyu Liu, Jing Ning <jning@mdanderson.org>, Ruosha Li <Ruosha.Li@uth.tmc.edu>
+Maintainer: Xiangyu Liu, Jing Ning <jning@mdanderson.org>, Ruosha Li <Ruosha.Li@uth.tmc.edu>
 Description: Semiparametric Modelling and Estimation of the Global Percentile Outcome.
 License: GPL (>= 2)
 Imports: Rcpp (>= 1.0.8), truncnorm, mathjaxr
